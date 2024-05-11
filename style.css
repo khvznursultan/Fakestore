@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; 
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.header__category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    
+}
+
+.header__category li {
+    font-size: 22px;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.header__category li:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.card {
+    width: 280px;
+    border: 2px solid grey;
+    padding: 15px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap:  40px;
+
+}
+
+.card img {
+    width: 95%;
+    height: 250px;
+}
+
+.btn__cart {
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.actived{
+    color: brown;
+    text-decoration: underline;
+}
+
+
+.cart {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    right: 380px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.btnMore {
+    width: 23.5px;
+    background-color: rgb(208, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.card__info h4 {
+    height: 100px;
+}
+
+.boxCart {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: #808080;
+    overflow: scroll;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.cart__close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.cart__close:hover {
+    color: red;
+}
+
+.boxCart.active {
+    display: block;
+}
+
+.oneCart img{
+    width: 100px;
+    height: 100px;
+}
+
+.oneCart {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 20px;
+}
+
+.oneCart h5 {
+    font-size: 22px;
+}
+
+.countCart {
+   border-radius: 50%;
+   background-color: antiquewhite;
+   color: rgba(252, 10, 10, 0.798);
+}
+
+.cartItemController {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.increase {
+    width: 50px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.decrease {
+    width: 50px;
+    height: 30px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartItemController h6 {
+    font-size: 22px;
+}
+
+.priceCart {
+    position: fixed;
+    right: 20%;
+    top: 30px;
+    color: rgba(247, 147, 107, 0.941);
+}
+
+.search_inp{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid green
+}
+
